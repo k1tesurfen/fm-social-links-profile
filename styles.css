@@ -44,6 +44,10 @@ body {
   justify-content: center;
 }
 
+a {
+  color: var(--primary-green);
+}
+
 .attribution {
   position: absolute;
   font-size: 0.6rem;
