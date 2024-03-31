@@ -1,0 +1,123 @@
+/*
+ * Color Definitions
+ */
+
+:root {
+  --primary-green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --grey-dark: hsl(0, 0%, 12%);
+  --black-off: hsl(0, 0%, 8%);
+}
+
+/*
+ * END Color Definitions
+ */
+
+/*
+ * Font 
+ */
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-VariableFont_slnt_wght.ttf)
+    format("truetype-variations");
+  font-weight: 500;
+}
+/*
+ * END Font 
+ */
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  color: var(--white);
+}
+
+body {
+  font-family: "Inter" !important;
+  background-color: var(--black-off);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  position: absolute;
+  font-size: 0.6rem;
+  bottom: 0.5rem;
+}
+
+.card {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey-dark);
+  width: 300px;
+  padding: 2.9rem;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card h1 {
+  font-size: 1.7rem;
+  margin: 0.4rem;
+  font-weight: 400;
+}
+
+.card h2 {
+  margin: 0.3rem 0 1rem 0;
+  color: var(--primary-green);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.card p {
+  opacity: 0.6;
+  margin: 0.8rem 0;
+}
+
+.card a {
+  text-decoration: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--grey);
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.card a:hover {
+  background-color: var(--primary-green);
+  color: var(--grey-dark);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .card {
+    width: calc(375px - 50px);
+    box-sizing: border-box;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .card {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 1.5rem 0.8rem;
+  }
+}
